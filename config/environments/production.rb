@@ -58,15 +58,16 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   # Set host to be used by links generated in mailer templates.
-  config.action_mailer.default_url_options = { host: "example.com" }
+  config.action_mailer.default_url_options = { host: "farmland-api.proxima89.com", protocol: "https" }
+  config.action_controller.default_url_options = { host: "farmland-api.proxima89.com", protocol: "https" }
 
-  # Specify outgoing SMTP server. Remember to add smtp/* credentials via rails credentials:edit.
+  # Configure mailer to use SMTP
+  # config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = {
-  #   user_name: Rails.application.credentials.dig(:smtp, :user_name),
-  #   password: Rails.application.credentials.dig(:smtp, :password),
-  #   address: "smtp.example.com",
+  #   address: 'smtp.sendgrid.net',
   #   port: 587,
-  #   authentication: :plain
+  #   domain: 'farmland-api.proxima89.com',
+  #   enable_starttls_auto: true
   # }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
