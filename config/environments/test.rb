@@ -37,8 +37,8 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
 
   # Configure host for URL generation in test environment
-  config.action_mailer.default_url_options = { host: 'farmland-api.test', protocol: 'http' }
-  config.action_controller.default_url_options = { host: 'farmland-api.test', protocol: 'http' }
+  config.action_mailer.default_url_options = { host: "farmland-api.test", protocol: "http" }
+  config.action_controller.default_url_options = { host: "farmland-api.test", protocol: "http" }
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
